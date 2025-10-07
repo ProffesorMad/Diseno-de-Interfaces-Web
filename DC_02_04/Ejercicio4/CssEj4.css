@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 20px;
+}
+
+.bloque-absoluto {
+  width: 600px;
+  height: 200px;
+  background-color: #cce0ff;
+  font-size: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #2b4a8b;
+  border-radius: 8px;
+}
+
+
+.bloque-relativo {
+  width: 60%;
+  height: 30vh;
+  background-color: #d8f3dc;
+  font-size: 1.2rem;
+  padding: 2em;
+  border: 2px solid #40916c;
+  border-radius: 8px;
+}
