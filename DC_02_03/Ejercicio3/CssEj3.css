@@ -1,0 +1,11 @@
+h2 {
+  color: blue;
+}
+
+.titulo {
+  color: orange;
+}
+
+h2.titulo {
+  color: green !important;
+}
