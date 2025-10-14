@@ -1,0 +1,26 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header, nav, footer {
+    background-color: #1f1f1f;
+}
+
+a {
+    color: #90caf9;
+}
+
+.tarjeta-producto {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.boton-compra {
+    background-color: #90caf9;
+    color: #000;
+}
+
+.boton-compra:hover {
+    background-color: #64b5f6;
+}
