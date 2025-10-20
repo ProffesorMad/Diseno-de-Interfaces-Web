@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bikes-LE | Contacto</title>
-    <link rel="stylesheet" href="css/Estilos.css">
-    <link rel="alternate stylesheet" href="css/Alternativo.css" title="Modo oscuro">
+    <title>Contacto | Bikes-LE</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="alternate stylesheet" href="alternativo.css" title="Modo oscuro">
 </head>
 <body>
-    <header>
-        <h1>Contacto</h1>
+
+    <header class="centrado">
+        <h1>Contáctanos</h1>
         <nav>
             <ul>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Producto.html">Productos</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="centrado">
+    <main>
         <section>
-            <h2>Envíanos un mensaje</h2>
+            <h2>Formulario de contacto</h2>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -30,15 +31,17 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
                 <button type="submit" class="boton-compra">Enviar</button>
             </form>
+            <p class="error-formulario">* Todos los campos son obligatorios.</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Bikes-LE</p>
+    <footer class="centrado">
+        <p>&copy; 2025 Bikes-LE. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
