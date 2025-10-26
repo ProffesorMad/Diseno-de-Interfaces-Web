@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1,
+h2 {
+  color: #005bbb;
+  margin-top: 1.5rem;
+}
+
+/* EJERCICIO 1: GALERÍA */
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+figure {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* EJERCICIO 3: CARGANDO */
+.cargando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.cargando img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.cargando button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* EJERCICIO 4: SPRITE */
+.menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.icono {
+  background-image: url("img/sprite.png");
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: 100px auto;
+}
+
+.home {
+  background-position: 0 0;
+}
+
+.user {
+  background-position: -25px 0;
+}
+
+.mail {
+  background-position: -50px 0;
+}
+
+.settings {
+  background-position: -75px 0;
+}
+
+/* EJERCICIO 5: FONDO WEBP */
+
+.hero {
+  background-image: url("img/foto.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

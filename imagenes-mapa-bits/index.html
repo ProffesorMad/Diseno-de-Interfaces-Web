@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formatos de imagen para interfaces web</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ejercicio 2: Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <!-- <link rel="icon" type="image/webp" href="img/favicon.webp" /> -->
+  <!-- Comentario: PNG funciona en todos los navegadores; WebP solo en Chrome y Edge -->
+</head>
+<body>
+  <header>
+    <h1>Formatos de imagen para interfaces web</h1>
+    <p>Actividad 03_02 — Desarrollo de Interfaces Web</p>
+  </header>
+
+  <!-- EJERCICIO 1: COMPARATIVA DE FORMATOS -->
+
+  <section id="ejercicio1">
+    <h2>1️⃣ Comparativa de formatos de imagen</h2>
+    <p>Una misma imagen guardada en diferentes formatos.</p>
+
+    <div class="galeria">
+      <figure>
+        <img src="img/foto.jpg" alt="Foto en JPG" />
+        <figcaption>JPG</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.png" alt="Foto en PNG" />
+        <figcaption>PNG</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.gif" alt="Foto en GIF" />
+        <figcaption>GIF</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.webp" alt="Foto en WEBP" />
+        <figcaption>WEBP</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.svg" alt="Foto en SVG" />
+        <figcaption>SVG</figcaption>
+      </figure>
+    </div>
+
+    <!-- Comentario: WEBP resultó el formato más eficiente en tamaño y calidad. -->
+  </section>
+
+
+  <!-- EJERCICIO 3: GIF ANIMADO -->
+
+  <section id="ejercicio3">
+    <h2>2️⃣ GIF animado como parte de la interfaz</h2>
+    <div class="cargando">
+      <img src="img/loading.gif" alt="Cargando..." />
+      <button>Cargando...</button>
+    </div>
+  </section>
+
+  <!-- EJERCICIO 4: SPRITE DE ÍCONOS -->
+
+  <section id="ejercicio4">
+    <h2>3️⃣ Sprite de íconos PNG</h2>
+    <ul class="menu">
+      <li><span class="icono home"></span>Inicio</li>
+      <li><span class="icono user"></span>Usuario</li>
+      <li><span class="icono mail"></span>Correo</li>
+      <li><span class="icono settings"></span>Ajustes</li>
+    </ul>
+  </section>
+
+  <!-- EJERCICIO 5: WEBP OPTIMIZADO COMO FONDO -->
+  <section id="ejercicio5" class="hero">
+    <h2>4️⃣ Fondo optimizado con WebP</h2>
+    <h3>Bienvenido a mi sitio web</h3>
+    <p>Esta sección usa la misma imagen “foto.webp” como fondo optimizado.</p>
+
+    <picture>
+      <source srcset="img/foto.webp" type="image/webp" />
+      <img src="img/foto.png" alt="Fondo alternativo" />
+    </picture>
+  </section>
+
+  <footer>
+    <p>© 2025 — Actividad 03_02 DIW</p>
+  </footer>
+</body>
+</html>
