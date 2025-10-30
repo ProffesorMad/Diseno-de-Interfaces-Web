@@ -57,10 +57,31 @@
   </section>
 
   <!-- EJERCICIO 4: SPRITE DE ÍCONOS -->
-  <section id="ejercicio4">
-    <h2>Sprite de íconos PNG</h2>
+  <!-- EJERCICIO 4: SPRITE DE PERSONAJE -->
+<section id="ejercicio4">
+  <h2>3️⃣ Sprite animado de personaje</h2>
+  <div class="sprite-container">
+    <img id="sprite" src="img/sprite1.png" alt="Personaje animado">
+  </div>
+</section>
+
+<script>
     
-  </section>
+    const imagenes = [
+      "img/1.jpeg",
+      "img/2.jpeg",
+      "img/1.jpeg",
+      "img/3.jpeg"
+    ];
+
+    let indice = 0;
+    const sprite = document.getElementById("sprite");
+
+    setInterval(() => {
+      indice = (indice + 1) % imagenes.length;
+      sprite.src = imagenes[indice];
+    }, 200); 
+</script>
 
   <!-- EJERCICIO 5: WEBP OPTIMIZADO COMO FONDO -->
   <section id="ejercicio5" class="hero">
