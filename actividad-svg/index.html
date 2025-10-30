@@ -1,31 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Actividad 03_03 – Formatos de imagen para interfaces web</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actividad: Formatos de imagen - SVG vs PNG</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Ejercicio 1 – Imágenes Raster y Vectoriales</h1>
+  <header>
+    <h1>Actividad: Formatos de imagen para interfaces web - Gráficos vectoriales</h1>
+  </header>
 
-  <section class="raster">
-    <h2>Imágenes Rasterizadas (PNG)</h2>
-    <img src="imagen.png" alt="Imagen PNG pequeña" width="100">
-    <img src="imagen.png" alt="Imagen PNG grande" width="400">
-  </section>
+  <main>
+    <!-- EJERCICIO 1 -->
+    <section class="raster">
+      <h2>Imágenes rasterizadas (PNG)</h2>
+      <div class="gallery">
+        <img src="imagen.png" alt="Imagen raster pequeña" class="small" />
+        <img src="imagen.png" alt="Imagen raster grande" class="large" />
+      </div>
+    </section>
 
-  <section class="vector">
-    <h2>Imágenes Vectoriales (SVG)</h2>
-    <img src="imagen.svg" alt="Imagen SVG pequeña" width="100">
-    <img src="imagen.svg" alt="Imagen SVG grande" width="400">
-  </section>
+    <section class="vector">
+      <h2>Imágenes vectoriales (SVG)</h2>
+      <div class="gallery">
+        <img src="imagen.svg" alt="Imagen vector pequeña" class="small" />
+        <img src="imagen.svg" alt="Imagen vector grande" class="large" />
+      </div>
+    </section>
 
-<!-- 
-    - La imagen PNG se ve borrosa o pixelada al ampliarla.
-    - La imagen SVG mantiene los bordes nítidos.
-    - El archivo PNG ocupa más espacio en disco (mayor tamaño en KB).
-  -->
-    
+    <!-- EJERCICIO 2 -->
+    <section class="svg-creation">
+      <h2>Gráfico creado en SVG (Ejercicio 2)</h2>
+      <object type="image/svg+xml" data="graf_ej2.svg" class="svg-object"></object>
+    </section>
+  </main>
+
+  <footer>
+    <p>Alumno: APELLIDO, Inicial Nombre</p>
+  </footer>
 </body>
 </html>
