@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --verde-sostenible: #2F8F5A;
+    --marron-cafe: #6B3F27;
+    --gris-neutro: #333333;
+    --gris-suave: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gris-suave);
+    color: var(--gris-neutro);
+    line-height: 1.6;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 450px;
+    color: white;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+}
+
+.header-texto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.header-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: var(--verde-sostenible);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #256e47;
+}
+
+.animacion-cafe {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: white;
+}
+
+.animacion-cafe h2 {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    color: var(--verde-sostenible);
+    margin-bottom: 20px;
+}
+
+.animacion-cafe img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--marron-cafe);
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--verde-sostenible);
+}
+
+.logo-nav {
+    height: 60px;
+}
+
+.productos {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.productos h2 {
+    font-family: 'Montserrat';
+    color: var(--marron-cafe);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.productos p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.producto-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 14px;
+    max-width: 350px;
+    margin: auto;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.producto-card h3 {
+    font-family: 'Montserrat';
+    color: var(--marron-cafe);
+    margin-bottom: 10px;
+}
+
+.sostenibilidad {
+    padding: 80px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sostenibilidad h2 {
+    font-family: 'Montserrat';
+    color: var(--verde-sostenible);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.sostenibilidad p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.fondo-sos {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.footer {
+    background-color: var(--marron-cafe);
+    color: white;
+    text-align: center;
+    padding: 40px 10%;
+    margin-top: 60px;
+}
+
+.logo-footer {
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+    .header-texto h1 {
+        font-size: 2.1rem;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .producto-card {
+        max-width: 85%;
+    }
+}
