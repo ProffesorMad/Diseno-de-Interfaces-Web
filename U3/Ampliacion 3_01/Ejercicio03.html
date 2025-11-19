@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 3</title>
+<style>
+.elemento {
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+animation: animacion 5s linear 2s;
+}
+@keyframes animacion {
+0% { left: 0; top: 0; background: red; }
+20% { background: orange; }
+50% { background: cyan; left: 200px; }
+75% { top: 150px; left: 200px; }
+100% { background: magenta; top: 0; left: 0; }
+}
+</style>
+</head>
+<body>
+<h2>Ejercicio 3</h2>
+<div class="elemento"></div>
+</body>
+</html>
