@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formatos de imagen para interfaces web</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ejercicio 2: Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <h1>Formatos de imagen para interfaces web</h1>
+    <p>Actividad 03_02 — Desarrollo de Interfaces Web</p>
+  </header>
+
+  <!-- EJERCICIO 1: COMPARATIVA DE FORMATOS -->
+  <section id="ejercicio1">
+    <h2>1️⃣ Comparativa de formatos de imagen</h2>
+    <p>Una misma imagen guardada en diferentes formatos.</p>
+
+    <div class="galeria">
+      <figure>
+        <img src="img/foto.jpg" alt="Foto en JPG" />
+        <figcaption>JPG</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.png" alt="Foto en PNG" />
+        <figcaption>PNG</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.webp" alt="Foto en WEBP" />
+        <figcaption>WEBP</figcaption>
+      </figure>
+      <figure>
+        <img src="img/foto.bmp" alt="Foto en BMP" />
+        <figcaption>BMP</figcaption>
+      </figure>
+      <figure>
+       <div class="tenor-gif-embed" data-postid="25016099" data-share-method="host" data-aspect-ratio="2.40601" data-width="100%"><a href="https://tenor.com/view/johnny-depp-pirate-pirate-salute-salute-intergalactic-pirates-of-the-caribbean-gif-25016099">Johnny Depp Pirate GIF</a>from <a href="https://tenor.com/search/johnny+depp-gifs">Johnny Depp GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <figcaption>GIF</figcaption>
+      </figure>
+    </div>
+
+    <!-- Comentario: WEBP resultó el formato más eficiente en tamaño y calidad. -->
+  </section>
+
+  <!-- EJERCICIO 3: GIF ANIMADO -->
+  <section id="ejercicio3">
+    <h2>2️⃣ GIF animado como parte de la interfaz</h2>
+    <div class="cargando">
+      <video src="img/loading.mp4" autoplay loop muted playsinline></video>
+      <br>
+      <button>Cargando...</button>
+    </div>
+  </section>
+
+  <!-- EJERCICIO 4: SPRITE DE ÍCONOS -->
+  <!-- EJERCICIO 4: SPRITE DE PERSONAJE -->
+<section id="ejercicio4">
+  <h2>3️⃣ Sprite animado de personaje</h2>
+  <div class="sprite-container">
+    <img id="sprite" src="img/sprite1.png" alt="Personaje animado">
+  </div>
+</section>
+
+<script>
+    
+    const imagenes = [
+      "img/1.jpeg",
+      "img/2.jpeg",
+      "img/1.jpeg",
+      "img/3.jpeg"
+    ];
+
+    let indice = 0;
+    const sprite = document.getElementById("sprite");
+
+    setInterval(() => {
+      indice = (indice + 1) % imagenes.length;
+      sprite.src = imagenes[indice];
+    }, 200); 
+</script>
+
+  <!-- EJERCICIO 5: WEBP OPTIMIZADO COMO FONDO -->
+  <section id="ejercicio5" class="hero">
+    <h2>4️⃣ Fondo optimizado con WebP</h2>
+    <h3>Bienvenido a mi sitio web</h3>
+    <p>Esta sección usa la misma imagen “foto.webp” como fondo optimizado.</p>
+
+    <picture>
+      <source srcset="img/foto.webp" type="image/webp" />
+      <!-- <img src="img/foto.png" alt="Fondo alternativo" />-->
+    </picture>
+  </section>
+
+  <footer>
+    <p>© 2025 — Actividad 03_02 DIW</p>
+  </footer>
+</body>
+</html>

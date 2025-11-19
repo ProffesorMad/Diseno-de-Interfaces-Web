@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #f5f6fb;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+}
+
+section {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Colores de secciones */
+section.raster {
+  background: #fff7f7;
+  border: 2px solid #ffd6d6;
+}
+
+section.vector {
+  background: #f7fff7;
+  border: 2px solid #d6ffd6;
+}
+
+section.svg-creation {
+  background: #f7faff;
+  border: 2px solid #cce0ff;
+}
+
+/* Galería de imágenes */
+.gallery {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  display: block;
+  border: 3px solid #3333;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+img.small {
+  width: 100px;
+  height: auto;
+}
+
+img.large {
+  width: 400px;
+  height: auto;
+}
+
+/* Objeto SVG del ejercicio 2 */
+.svg-object {
+  display: block;
+  margin: 1rem auto;
+  width: 400px;
+  height: auto;
+  border: 2px dashed #888;
+  border-radius: 6px;
+}
