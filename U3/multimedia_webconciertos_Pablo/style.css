@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #3a0066, #1a002f, #0a0018);
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, rgba(255,0,110,0.4), rgba(82,0,255,0.3));
+    backdrop-filter: blur(4px);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header p {
+    margin-top: .5rem;
+    opacity: .9;
+}
+
+.media {
+    max-width: 1300px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    gap: 2.2rem;
+    align-items: flex-start;
+}
+
+.block {
+    background: rgba(255,255,255,0.05);
+    padding: 1.8rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.video-block {
+    flex: 2.2; 
+}
+
+.video-block h2 {
+    margin-bottom: 0.6rem;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    border-radius: 12px;
+    box-shadow: 0 8px 35px rgba(255,0,180,0.3);
+}
+
+.audio-block {
+    flex: 1; 
+    max-width: 380px; 
+}
+
+.controls {
+    margin-top: 1rem;
+}
+
+.btn {
+    background: linear-gradient(135deg, #ff007a, #ff4fb2);
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    margin-right: .6rem;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    background: rgba(255,255,255,0.18);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    opacity: .7;
+}
+
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .audio-block,
+    .video-block {
+        flex: unset;
+        max-width: 100%;
+    }
+}
