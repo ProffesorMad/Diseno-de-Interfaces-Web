@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Librería Online</title>
+
+    <link rel="icon" type="image/x-icon" href="media/icono.ico">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <img src="media/icono.ico" alt="Icono librería" class="header-icon">
+        <h1>La noche de los Libros</h1>
+    </div>
+</header>
+
+<section class="hero">
+
+    <div class="video-box">
+        <video id="videoLibro">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-controls">
+            <button id="playPause">▶ / ⏸</button>
+            <button id="reiniciar">⏮</button>
+            <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+    <div class="hero-text">
+        <h2>Tu librería online de confianza</h2>
+
+        <p>
+            Bienvenido a <strong>La noche de los Libros</strong>, una librería online
+            pensada para lectores apasionados, curiosos y amantes de las buenas
+            historias. Nuestro catálogo combina grandes clásicos con las
+            novedades editoriales más destacadas del momento.
+        </p>
+
+        <p>
+            Apostamos por una experiencia de compra sencilla, rápida y segura,
+            donde puedas descubrir nuevos libros, consultar recomendaciones y
+            acceder a ofertas exclusivas desde cualquier dispositivo.
+        </p>
+
+        <p>
+            Explora nuestras secciones, disfruta de contenidos seleccionados y
+            déjate llevar por la lectura. Porque cada libro es una nueva aventura.
+        </p>
+
+        <button class="cta">Explorar catálogo</button>
+    </div>
+
+</section>
+
+<section class="promo">
+
+    <div class="promo-container">
+
+        <div class="card">
+            <img src="media/libro1.jpg" alt="Novedades">
+            <h3>Novedades</h3>
+            <p>Descubre los últimos libros incorporados a nuestro catálogo.</p>
+        </div>
+
+        <div class="card">
+            <img src="media/libro2.jpg" alt="Más vendidos">
+            <h3>Más vendidos</h3>
+            <p>Los títulos más populares entre nuestros lectores.</p>
+        </div>
+
+        <div class="card">
+            <img src="media/libro3.jpg" alt="Ofertas">
+            <h3>Ofertas</h3>
+            <p>Aprovecha descuentos especiales por tiempo limitado.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="formulario">
+
+    <form id="formCompra">
+        <h3>Formulario de compra</h3>
+
+        <label>Nombre
+            <input type="text" id="nombre">
+        </label>
+
+        <label>Libro
+            <select id="libro">
+                <option value="">Selecciona un libro</option>
+                <option value="Infierno">Infierno</option>
+                <option value="Maldita Roma">Maldita Roma</option>
+                <option value="La armadura de la Luz">La armadura de la Luz</option>
+            </select>
+        </label>
+
+        <label>Email
+            <input type="email" id="email">
+        </label>
+
+        <button type="button" id="comprar">Comprar ahora</button>
+    </form>
+
+    <div id="mensajeConfirmacion"></div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 La noche de los Libros</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
