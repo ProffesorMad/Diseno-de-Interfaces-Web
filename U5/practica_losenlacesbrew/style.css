@@ -13,12 +13,30 @@
     box-sizing: border-box;
 }
 
+/* =====================================================
+   PROBLEMA 2:
+   Texto pequeño y difícil de leer para personas mayores.
+   SOLUCIÓN:
+   Aumento del tamaño base del texto y del interlineado.
+   ===================================================== */
 body {
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     background: url("imagenes_exportadas/Fondo.jpg") no-repeat center center fixed;
     background-size: cover;
     color: var(--gris-neutro);
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* =====================================================
+   PROBLEMA 4:
+   Contraste mejorable entre texto y fondo.
+   SOLUCIÓN:
+   Se asegura texto oscuro sobre fondos claros.
+   ===================================================== */
+p {
+    color: #000000;
 }
 
 .header {
@@ -27,7 +45,6 @@ body {
     display: flex;
     align-items: center;
     padding-left: 10%;
-    position: relative;
     background: url("imagenes_exportadas/Banner.jpg") no-repeat center center;
     background-size: cover;
 }
@@ -38,141 +55,74 @@ body {
     text-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 }
 
-.header-texto h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
 .header-texto p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
 .boton {
     background-color: var(--verde-sostenible);
     color: white;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border: none;
     border-radius: 6px;
-    text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.boton:hover {
-    background-color: #256e47;
+/* =====================================================
+   PROBLEMA 3:
+   Falta de jerarquía visual clara.
+   SOLUCIÓN:
+   Títulos más grandes y mejor separación.
+   ===================================================== */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
 }
 
-.animacion-cafe {
-    text-align: center;
-    padding: 60px 10%;
-    background-color: rgba(255,255,255,0.9);
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
-.animacion-cafe h2 {
-    font-family: 'Montserrat';
-    font-size: 2rem;
-    color: var(--verde-sostenible);
-    margin-bottom: 20px;
+section {
+    margin-bottom: 60px;
 }
 
-.animacion-cafe img {
-    width: 220px;
-    border-radius: 10px;
+.animacion-cafe,
+.productos,
+.sostenibilidad {
+    background-color: rgba(255,255,255,0.95);
 }
 
 .navbar {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
-    align-items: center;
-    padding: 10px 5%;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    padding: 15px 5%;
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+/* =====================================================
+   PROBLEMA 1:
+   Teléfono poco visible.
+   SOLUCIÓN:
+   Bloque de contacto destacado y centrado.
+   ===================================================== */
+.contacto-destacado {
+    background-color: rgba(255,255,255,0.98);
+    border: 3px solid var(--verde-sostenible);
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
 }
 
-.navbar a {
-    text-decoration: none;
+.telefono {
+    font-size: 2rem;
     font-weight: bold;
     color: var(--marron-cafe);
-    transition: 0.2s;
-}
-
-.navbar a:hover {
-    color: var(--verde-sostenible);
-}
-
-.logo-nav {
-    height: 60px;
-}
-
-.productos {
-    text-align: center;
-    padding: 80px 10%;
-    background-color: rgba(255,255,255,0.9);
-}
-
-.productos h2 {
-    font-family: 'Montserrat';
-    color: var(--marron-cafe);
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.productos p {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-.producto-card {
-    background-color: white;
-    padding: 40px;
-    border-radius: 14px;
-    max-width: 350px;
-    margin: auto;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-}
-
-.producto-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.producto-card h3 {
-    font-family: 'Montserrat';
-    color: var(--marron-cafe);
-    margin-bottom: 10px;
-}
-
-.sostenibilidad {
-    padding: 80px 10%;
-    background-color: rgba(255,255,255,0.9);
-    text-align: center;
-}
-
-.sostenibilidad h2 {
-    font-family: 'Montserrat';
-    color: var(--verde-sostenible);
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-.sostenibilidad p {
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 40px;
 }
 
 .footer {
@@ -180,28 +130,4 @@ body {
     color: white;
     text-align: center;
     padding: 40px 10%;
-    margin-top: 60px;
-}
-
-.logo-footer {
-    height: 70px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    margin: 6px 0;
-}
-
-@media (max-width: 768px) {
-    .header-texto h1 {
-        font-size: 2.1rem;
-    }
-
-    .navbar ul {
-        gap: 15px;
-    }
-
-    .producto-card {
-        max-width: 85%;
-    }
 }

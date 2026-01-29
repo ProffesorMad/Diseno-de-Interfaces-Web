@@ -1,0 +1,60 @@
+Ejercicio 1.Análisis del usuario y del objetivo
+
+El perfil de usuario al que va dirigida la adaptación de la web “Los Enlaces Brew” corresponde a personas mayores de 65 años, 
+con un bajo nivel de competencia digital, que acceden principalmente desde un ordenador. 
+Este tipo de usuario suele presentar dificultades para interpretar interfaces complejas, textos pequeños o elementos poco claros.
+
+El objetivo principal de estos usuarios al acceder a la web es consultar de forma sencilla los productos disponibles y 
+leer sus descripciones sin esfuerzo, así como encontrar rápidamente un medio de contacto directo, siendo el teléfono la información más prioritaria.
+
+Por tanto, la interfaz debe facilitar una navegación simple, con información clara, textos legibles y accesos directos a los productos y al contacto, 
+evitando elementos confusos o innecesarios.
+
+Ejercicio 2.Identificación de problemas de usabilidad del interfaz original
+
+Problema 1: Dificultad para localizar el contacto telefónico
+En la interfaz original, el número de teléfono no se muestra de forma destacada ni visible de manera inmediata, obligando al usuario a recorrer la página o 
+interpretar la información para encontrar un medio de contacto.
+
+Para el perfil de usuario definido, esta situación supone una barrera importante, ya que el teléfono es el principal objetivo de consulta y debería ser accesible de 
+forma directa y clara.
+
+Problema 2: Tamaño de texto reducido y escasa legibilidad
+Los textos del sitio web presentan un tamaño de fuente pequeño y un interlineado ajustado, lo que dificulta la lectura continuada, 
+especialmente para personas mayores que pueden tener problemas de visión.
+
+Esta falta de legibilidad provoca fatiga visual y hace que el usuario tenga dificultades para leer las descripciones de los productos.
+
+Problema 3: Falta de jerarquía visual clara entre secciones
+La interfaz no presenta una jerarquía visual suficientemente clara entre los distintos contenidos, como títulos, descripciones de productos o secciones informativas.
+
+Esto puede generar confusión en usuarios con poca experiencia digital, ya que no identifican fácilmente qué información es más importante ni cómo está organizada la página.
+
+Problema 4:Contraste mejorable entre texto y fondo
+En algunas zonas del sitio, el contraste entre el texto y el fondo no es lo suficientemente marcado, lo que dificulta aún más la lectura para personas mayores.
+
+Un contraste bajo obliga al usuario a esforzarse más para interpretar la información, reduciendo la comodidad de uso de la web.
+
+Ejercicio 4.Justificación de los cambios realizados
+
+Problema 1: Dificultad para localizar el contacto telefónico
+Se ha añadido un bloque de contacto destacado con el número de teléfono visible y claramente diferenciado del resto del contenido.
+
+Esta modificación mejora la usabilidad al permitir que los usuarios mayores localicen de forma inmediata el medio de contacto principal sin necesidad de navegar 
+por la página ni interpretar información compleja.
+
+Problema 2: Tamaño de texto reducido y escasa legibilidad
+Se ha aumentado el tamaño base del texto y el interlineado en toda la web, facilitando la lectura continuada de los contenidos.
+
+Este cambio reduce la fatiga visual y mejora la comprensión de la información, especialmente en usuarios mayores que pueden presentar dificultades de visión.
+
+Problema 3: Falta de jerarquía visual clara entre secciones
+Se han reforzado los tamaños de los encabezados y se ha mejorado la separación visual entre secciones, permitiendo identificar de manera clara las distintas partes de la web.
+
+De este modo, el usuario puede orientarse fácilmente y comprender qué información es más relevante en cada momento.
+
+Problema 4: Contraste mejorable entre texto y fondo
+Se ha mejorado el contraste asegurando fondos claros y texto oscuro en las zonas con información relevante.
+
+Esta modificación incrementa la legibilidad del contenido y evita esfuerzos innecesarios por parte del usuario, mejorando la experiencia general de uso.
+
