@@ -68,6 +68,12 @@ p {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
+    margin: 8px;
+}
+
+/* BOTÓN EXTRA DE LLAMADA */
+.boton-llamar {
+    background-color: var(--marron-cafe);
 }
 
 /* =====================================================
@@ -94,14 +100,27 @@ section {
 .productos,
 .sostenibilidad {
     background-color: rgba(255,255,255,0.95);
+    padding: 60px 10%;
+}
+
+/* TEXTO DE APOYO */
+.ayuda {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #444;
 }
 
 .navbar {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 15px 5%;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* =====================================================
@@ -123,6 +142,11 @@ section {
     font-size: 2rem;
     font-weight: bold;
     color: var(--marron-cafe);
+}
+
+.horario {
+    margin-top: 10px;
+    font-style: italic;
 }
 
 .footer {
